@@ -72,7 +72,7 @@ public class HttpsRequest implements IServiceRequest{
 		httpClient = new HttpClient();
 
 		httpClient.getParams().setParameter(HttpMethodParams.HTTP_CONTENT_CHARSET,UTF8);
-		//        httpClient.getParams().setParameter(HTTP.CONTENT_ENCODING, UTF8);  //TODO Mao 2016/11/23
+		//        httpClient.getParams().setParameter(HTTP.CONTENT_ENCODING, UTF8);  //TODO  2016/11/23
 		//        httpClient.getParams().setParameter(HTTP.CHARSET_PARAM, UTF8);  
 		//        httpClient.getParams().setParameter(HTTP.DEFAULT_PROTOCOL_CHARSET,UTF8);
 
@@ -87,7 +87,7 @@ public class HttpsRequest implements IServiceRequest{
 				httpClient.getState().setProxyCredentials(
 						new AuthScope(CusProxy.getInstance().getHttpHost(), CusProxy.getInstance().getHttpPort(), null, null),
 						new UsernamePasswordCredentials(CusProxy.getInstance().getHttpUserName(), CusProxy.getInstance().getHttpPwd())
-						); //TODO Mao 2016-08-11
+						); //TODO  2016-08-11
 			}
 		}
 
@@ -111,7 +111,7 @@ public class HttpsRequest implements IServiceRequest{
 				httpClient.getState().setProxyCredentials(
 						new AuthScope(CusProxy.getInstance().getHttpHost(), CusProxy.getInstance().getHttpPort(), null, null),
 						new UsernamePasswordCredentials(CusProxy.getInstance().getHttpUserName(), CusProxy.getInstance().getHttpPwd())
-						); //TODO Mao 2016-08-11
+						); //TODO  2016-08-11
 			}
 		}
 
@@ -142,7 +142,7 @@ public class HttpsRequest implements IServiceRequest{
 		PostMethod httpPost = new PostMethod(url);
 
 		httpPost.getParams().setParameter(HttpMethodParams.HTTP_CONTENT_CHARSET,UTF8);
-		//        httpPost.getParams().setParameter(HTTP.CONTENT_ENCODING, UTF8);   //TODO Mao 2016/11/23
+		//        httpPost.getParams().setParameter(HTTP.CONTENT_ENCODING, UTF8);   //TODO  2016/11/23
 		//        httpPost.getParams().setParameter(HTTP.CHARSET_PARAM, UTF8);  
 		//        httpPost.getParams().setParameter(HTTP.DEFAULT_PROTOCOL_CHARSET, UTF8); 
 

@@ -6,7 +6,7 @@ package cn.woniu.onlinepay;
 /** 
  * @ClassName: AliPayConstants 
  * @Description: TODO 
- * @author Jianghui Mao 
+ * @author Woniu
  * @date 2016年8月30日
  *  
  */

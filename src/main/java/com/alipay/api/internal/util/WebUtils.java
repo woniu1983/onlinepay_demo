@@ -62,7 +62,7 @@ public abstract class WebUtils {
 	}
 
 	static {
-		// -------------------------------Mao 2016-08-26 Add to use HttpsURLConnectionOldImpl
+		// ------------------------------- 2016-08-26 Add to use HttpsURLConnectionOldImpl
 		// SDK v10.x、v11.xはそれ以前のSDKアプリとの互換性のために
 		// java.protocol.handler.pkgsにcom.sun.net.ssl.internal.www.protocolを指定しています。
 		System.setProperty("java.protocol.handler.pkgs", "com.sun.net.ssl.internal.www.protocol");
@@ -86,7 +86,7 @@ public abstract class WebUtils {
 
 		}
 
-		// -------------------------------Mao 2016-08-26 Comment to use HttpsURLConnectionOldImpl
+		// ------------------------------- 2016-08-26 Comment to use HttpsURLConnectionOldImpl
 		//        verifier = new HostnameVerifier() {
 		//            public boolean verify(String hostname, SSLSession session) {
 		//                return false;//默认认证不通过，进行证书校验。

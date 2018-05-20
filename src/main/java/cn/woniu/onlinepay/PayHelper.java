@@ -2,7 +2,7 @@
  * @Title: PayHelper.java 
  * @Package cn.com.rits.app.yunprint.communication 
  * @Description: TODO 
- * @author Jianghui Mao   
+ * @author Woniu  
  * @date 2016年8月25日 下午1:35:07 
  * @version V1.0   
  */
@@ -17,7 +17,7 @@ import cn.woniu.onlinepay.model.PayProfile;
 /** 
  * @ClassName: PayHelper 
  * @Description: 支付工具类 
- * @author Jianghui Mao 
+ * @author Woniu
  * @date 2016年8月25日 下午1:35:07 
  *  
  */

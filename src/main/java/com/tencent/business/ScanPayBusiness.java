@@ -63,7 +63,7 @@ public class ScanPayBusiness {
         //返回qr_code url成功
         void onRePaySuccess(ScanPayResData scanPayResData);
         
-        //返回qr_code url失败  网络原因 //TODO Mao
+        //返回qr_code url失败  网络原因 //TODO 
         void onFailByNetwork();
     }
 

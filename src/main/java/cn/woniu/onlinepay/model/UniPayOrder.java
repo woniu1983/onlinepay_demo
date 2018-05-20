@@ -24,7 +24,7 @@ public class UniPayOrder extends PayOrder {
     
     public UniPayOrder() {
     	super();
-    	this.productBody = "云打印(银联扫码支付)";
+    	this.productBody = "测试(银联扫码支付)";
     	//outTradeNo: 商户订单号，不能含“-”或“_”, 长度8-40
     }
 

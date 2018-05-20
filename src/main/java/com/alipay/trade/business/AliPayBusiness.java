@@ -2,7 +2,7 @@
  * @Title: AliPayBusiness.java 
  * @Package com.tencent.business 
  * @Description: TODO 
- * @author Jianghui Mao   
+ * @author Woniu  
  * @date 2016年8月25日 下午4:56:03 
  * @version V1.0   
  */
@@ -34,7 +34,7 @@ import cn.woniu.onlinepay.log.Logger;
 /** 
  * @ClassName: AliPayBusiness 
  * @Description: TODO 
- * @author Jianghui Mao 
+ * @author Woniu
  * @date 2016年8月25日 下午4:56:03 
  *  
  */

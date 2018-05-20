@@ -2,7 +2,7 @@
  * @Title: PayOrder.java 
  * @Package cn.com.rits.app.yunprint.model 
  * @Description: TODO 
- * @author Jianghui Mao   
+ * @author Woniu  
  * @date 2016年8月25日 下午2:44:34 
  * @version V1.0   
  */
@@ -14,7 +14,7 @@ import cn.woniu.onlinepay.log.Logger;
 /** 
  * @ClassName: PayOrder 
  * @Description: TODO 
- * @author Jianghui Mao 
+ * @author Woniu
  * @date 2016年8月25日 下午2:44:34 
  *  
  */
@@ -156,14 +156,7 @@ public class PayOrder {
 		// 支付宝：(必填) 商户网站订单系统中唯一订单号，64个字符以内(微信32个字符以内)，只能包含字母、数字、下划线，
     	// 银联: 商户订单号，不能含“-”或“_”, 长度8-40 
 		// 所以创建的字符串必须在32位以内
-		// 2016-12-14 Mao 修改， 原来是使用机器序列号，但是有些机器序列号带有中划线等不支持的字符
 		
-//		long time = System.currentTimeMillis();   // 目前13位
-//		long random = (long)(Math.random() * 100000L); // 最大6位
-//		String no = "GWP" + String.valueOf(randomChar()) + random + time; // GW+ 机器
-		
-		// 2017-07-14  使用规则改为： 用户Id+yun+3位随机数+时间戳
-		// 目前用户ID全部用： 0表示
 		long time = System.currentTimeMillis();   // 目前13位
 		long random = (long)(Math.random() * 100000L); // 最大6位
 		String no = "x" + "Test" + random + time; 
