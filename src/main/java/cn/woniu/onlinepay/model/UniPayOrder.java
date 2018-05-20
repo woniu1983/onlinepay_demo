@@ -1,0 +1,40 @@
+/** 
+ * Copyright (c) 2017, RITS All Rights Reserved. 
+ * 
+ */ 
+package cn.woniu.onlinepay.model;
+
+/** 
+ * @ClassName: UniPayOrder <br/> 
+ * @Description: TODO  <br/> 
+ * 
+ * @author maojianghui 
+ * @date: 2017年6月22日 下午8:47:00 <br/>
+ * @version  
+ * @since JDK 1.6 
+ */
+public class UniPayOrder extends PayOrder {
+	
+	/** 
+	 * 字段： txnTime
+	 * 说明：订单发送时间 （商户端生成表示申请二维码和一笔真实订单的订单号）
+	 * 默认：
+	 * 要求： Must */
+	private String txnTime;
+    
+    public UniPayOrder() {
+    	super();
+    	this.productBody = "云打印(银联扫码支付)";
+    	//outTradeNo: 商户订单号，不能含“-”或“_”, 长度8-40
+    }
+
+	public String getTxnTime() {
+		return txnTime;
+	}
+
+	public void setTxnTime(String txnTime) {
+		this.txnTime = txnTime;
+	}
+
+    
+}
