@@ -31,9 +31,9 @@ public class PayHelper {
 	/*
 	 * 初始化支付参数，从server拿到当前运营商的支付信息
 	 */
-	public static void initPayConfig() {
+	public static void initPayConfig(PayProfile profile) {
 		boolean result = false;
-		PayProfile profile = new PayProfile(); //TODO
+		
 		// 微信支付信息
 		Configure.setPayAvailable(profile.isWechatPayAva());//微信支付是否支持
 
