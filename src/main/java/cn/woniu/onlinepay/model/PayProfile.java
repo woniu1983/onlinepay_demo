@@ -11,6 +11,8 @@ import org.apache.commons.lang.StringUtils;
  */
 public class PayProfile {
 	
+	public String name = "";
+	public long id = 0L;
 	// 微信
 	
 	/** 微信支付私有key */
@@ -44,8 +46,12 @@ public class PayProfile {
 	public int ap_key_len = 2048;
 	
 	
-	public PayProfile() {
+	public PayProfile(String name) {
+		this.name = name;
+		this.id  = (long) (Math.random() * Math.pow(10, 7));
 	}
+	
+	
 	
 	public boolean isAliPayAva() {
 		if (StringUtils.isEmpty(ap_account)

@@ -4,10 +4,20 @@
  */ 
 package ryan.ui.swt;
 
+import java.awt.Toolkit;
+import java.util.ArrayList;
+
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.wb.swt.SWTResourceManager;
+
+import cn.woniu.onlinepay.model.PayProfile;
+import ryan.ui.model.DataManager;
+
+import org.eclipse.swt.widgets.Menu;
+import org.eclipse.swt.widgets.MenuItem;
 
 /** 
  * @ClassName: MainWindow <br/> 
@@ -27,7 +37,7 @@ public class MainWindow {
 
 	}
 
-	static MainWindow getInstance() {
+	public synchronized static MainWindow getInstance() {
 		return mainWindow;
 	}
 	
@@ -74,8 +84,35 @@ public class MainWindow {
 		shell.setBackgroundMode(SWT.INHERIT_DEFAULT);
 		shell.setText(Wordings.getInstance().getText("tool.title"));
 		
+		int screenW = Toolkit.getDefaultToolkit().getScreenSize().width;
+		int screenH = Toolkit.getDefaultToolkit().getScreenSize().height;
+		int shellH = shell.getBounds().height;
+		int shellW = shell.getBounds().width;
+		if (shellH > screenH)
+			shellH = screenH;
+		if (shellW > screenW)
+			shellW = screenW;
+		shell.setLocation(((screenW - shellW) / 2), ((screenH - shellH) / 2));
+		
+		Menu menu = new Menu(shell, SWT.BAR);
+		shell.setMenuBar(menu);
+		
+		MenuItem configMenuParent = new MenuItem(menu, SWT.CASCADE);
+		configMenuParent.setText(Wordings.getInstance().getText("profile.config"));
+		
+		Menu menuAdd = new Menu(configMenuParent);
+		configMenuParent.setMenu(menuAdd);
+		
+		MenuItem menuAddItem = new MenuItem(menuAdd, SWT.NONE);
+		menuAddItem.setText(Wordings.getInstance().getText("profile.add"));
+		
+		new MenuItem(menuAdd, SWT.SEPARATOR);
+		
+		initProfile();
 	}
 	
-	
-
+	private void initProfile() {
+		ArrayList<PayProfile> profiles = DataManager.getInstance().getProfiles();
+		
+	}
 }
