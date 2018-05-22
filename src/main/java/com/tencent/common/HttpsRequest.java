@@ -69,6 +69,10 @@ public class HttpsRequest implements IServiceRequest{
 	}
 	private void init() throws IOException, KeyStoreException, UnrecoverableKeyException, NoSuchAlgorithmException, KeyManagementException {
 
+		Protocol myhttps = new Protocol("https", new NoCheckSSLSocketFactory(), 443);
+		Protocol.registerProtocol("https",  myhttps);//TODO Mao 2018-05-21
+		Util.debug(">>>>>>>>>>>>>>init : https use NoCheckSSLSocketFactory ");
+		
 		httpClient = new HttpClient();
 
 		httpClient.getParams().setParameter(HttpMethodParams.HTTP_CONTENT_CHARSET,UTF8);
