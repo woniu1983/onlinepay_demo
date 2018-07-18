@@ -18,13 +18,13 @@ public class WCPConstants {
 	public static final String KEY_CERT_PWD = "certPassword";
 	public static final String KEY_PAY_ENABLE = "wechatEnable";
 	
-	public static final String KEY = "fGrUtmAoXr1PuXRHwibXT6cjkyY1wN48";
+	public static final String KEY = "vGrUtmAoXDrR1P2fuXRH2GfrwibXT6cjkyHwN4";
 
 	//微信分配的公众号ID（开通公众号之后可以获取到）
-	public static final String APPID = "wx58b043b13dc26cfe";
+	public static final String APPID = "wx43tgdgf534yhhsrth";
 
 	//微信支付分配的商户号ID（开通公众号的微信支付功能之后可以获取到）
-	public static final String MCHID = "1349778501";
+	public static final String MCHID = "1254885212";
 
 	//受理模式下给子商户分配的子商户号
 	public static final String SUBMCHID = "";
@@ -35,7 +35,7 @@ public class WCPConstants {
 	
 */
 	//HTTPS证书密码，默认密码等于商户号MCHID
-	public static final String CERTPASSWORD = "1349778501";
+	public static final String CERTPASSWORD = "1254885212";
 	//是否使用异步线程的方式来上报API测速，默认为异步模式
 	public static final boolean USETHREADTODOREPORT = true;
 
