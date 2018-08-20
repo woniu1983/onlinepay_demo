@@ -12,35 +12,35 @@ import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.SocketAddress;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
 import java.net.UnknownHostException;
 import java.security.KeyManagementException;
 import java.security.KeyStore;
 import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
 import java.security.UnrecoverableKeyException;
 import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 
 import javax.net.SocketFactory;
 import javax.net.ssl.KeyManager;
 import javax.net.ssl.KeyManagerFactory;
 import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 
 import org.apache.commons.httpclient.ConnectTimeoutException;
 import org.apache.commons.httpclient.params.HttpConnectionParams;
 import org.apache.commons.httpclient.protocol.SecureProtocolSocketFactory;
 
-import cn.woniu.onlinepay.WCPConstants;
-
+import cn.com.rits.app.yunprint.util.Constant;
 
 /** 
  * @ClassName: WCPSSLSocketFactory <br/> 
  * @Description: 用于Common-HttpClient3.1使用SSL  <br/> 
  * 
- * @author maojianghui 
- * @date: 2016年11月24日 上午9:36:49 <br/>
+ * @author woniu 
+ * @date: 2018年08月20日 更新 <br/>
  * @version  
  * @since JDK 1.6 
  */
@@ -95,7 +95,7 @@ public class WCPSSLSocketFactory implements SecureProtocolSocketFactory {
 		try {
 			String certPath = Configure.getCertLocalPath();
 			if (certPath == null || certPath.trim().isEmpty()) {
-				instream = getClass().getResourceAsStream(WCPConstants.CERT_FILE_NAME);
+				instream = getClass().getResourceAsStream(Constant.CERT_FILE_NAME);
 			} else {
 				instream = new FileInputStream(new File(certPath));
 			}
@@ -139,7 +139,9 @@ public class WCPSSLSocketFactory implements SecureProtocolSocketFactory {
 		
 		try {
 			sslcontext = SSLContext.getInstance("TLSv1");
-			sslcontext.init(kms, null, null);
+			sslcontext.init(kms, 
+					new TrustManager[] { new DefaultTrustManager() },
+					new SecureRandom());
 			
 		} catch (NoSuchAlgorithmException e) {
 			e.printStackTrace();
@@ -148,6 +150,20 @@ public class WCPSSLSocketFactory implements SecureProtocolSocketFactory {
 		} 
 
 		return sslcontext;
+	}
+	
+
+
+	private static class DefaultTrustManager implements X509TrustManager {
+		public X509Certificate[] getAcceptedIssuers() {
+			return null;
+		}
+
+		public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
+
+		public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+		}
 	}
 
 	private SSLContext getSSLContext() throws IOException {
