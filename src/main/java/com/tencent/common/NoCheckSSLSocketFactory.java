@@ -27,7 +27,7 @@ import org.apache.commons.httpclient.protocol.SecureProtocolSocketFactory;
  * @ClassName: NoCheckSSLSocketFactory <br/> 
  * @Description: TODO  <br/> 
  * 
- * @author maojianghui 
+ * @author woniu 
  * @date: 2018年5月21日 下午5:20:03 <br/>
  * @version  
  * @since JDK 1.6
