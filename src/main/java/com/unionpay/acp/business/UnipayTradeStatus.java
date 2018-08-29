@@ -1,5 +1,5 @@
 /** 
- * Copyright (c) 2017, RITS All Rights Reserved. 
+ * Copyright (c) 2017, WONIU All Rights Reserved. 
  * 
  */ 
 package com.unionpay.acp.business;
