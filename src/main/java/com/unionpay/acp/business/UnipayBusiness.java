@@ -22,7 +22,7 @@ import cn.woniu.onlinepay.log.Logger;
  * @ClassName: UnipayBusiness <br/> 
  * @Description: TODO  <br/> 
  * 
- * @author maojianghui 
+ * @author woniu 
  * @date: 2017年6月22日 下午7:55:11 <br/>
  * @version  
  * @since JDK 1.6 
