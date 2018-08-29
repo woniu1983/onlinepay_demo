@@ -1,5 +1,5 @@
 /** 
- * Copyright (c) 2017, RITS All Rights Reserved. 
+ * Copyright (c) 2017, WONIU All Rights Reserved. 
  * 
  */ 
 package com.unionpay.acp.sdk.request;
@@ -18,7 +18,7 @@ import cn.woniu.onlinepay.model.UniPayOrder;
  * @ClassName: UnipayTradeCancelRequest <br/> 
  * @Description: 消费撤销(撤销必须与原始消费在同一天（准确讲是前日23:00至本日23:00之间），且撤销必须是全金额撤销。)  <br/> 
  * 
- * @author maojianghui 
+ * @author WONIU 
  * @date: 2017年6月22日 下午5:36:31 <br/>
  * @version  
  * @since JDK 1.6 
