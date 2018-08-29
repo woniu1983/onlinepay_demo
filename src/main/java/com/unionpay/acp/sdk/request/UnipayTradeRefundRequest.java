@@ -1,5 +1,5 @@
 /** 
- * Copyright (c) 2017, RITS All Rights Reserved. 
+ * Copyright (c) 2017, WONIU All Rights Reserved. 
  * 
  */ 
 package com.unionpay.acp.sdk.request;
@@ -17,7 +17,7 @@ import cn.woniu.onlinepay.model.UniPayOrder;
  * @ClassName: UnipayTradeRefundRequest <br/> 
  * @Description: 退货可以在原始消费发生后30日内，可以部分金额退货，可以多次退货，但累计退货金额不能超过原始消费金额。  <br/> 
  * 
- * @author maojianghui 
+ * @author WONIU 
  * @date: 2017年6月22日 下午7:26:40 <br/>
  * @version  
  * @since JDK 1.6 
