@@ -33,14 +33,13 @@ public class PayOrder {
 	//费用，单位为分
 	protected int fee = 0;	
 
-	//商品标签,例如打印"PRINT" "COPY"
+	//商品标签
 	protected String goodsTag = "";
 	
-	//商品编号,例如打印"101", 复印"102"
+	//商品编号
 	protected String productId = "";
 	
-	//退款额， 单位为分=1积分=RMB1分
-	// 初始默认=订单费用，打印完Job，扣除掉该Job的费用的到
+	//退款额， 单位为RMB1分
 	private int reFundFee = fee;
 	
 	
