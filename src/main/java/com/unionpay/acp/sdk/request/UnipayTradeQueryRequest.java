@@ -1,5 +1,5 @@
 /** 
- * Copyright (c) 2017, RITS All Rights Reserved. 
+ * Copyright (c) 2017, WONIU All Rights Reserved. 
  * 
  */ 
 package com.unionpay.acp.sdk.request;
@@ -15,7 +15,7 @@ import cn.woniu.onlinepay.model.UniPayOrder;
  * @ClassName: UnipayTradeQueryRequest <br/> 
  * @Description: 交易状态查询交易  <br/> 
  * 
- * @author maojianghui 
+ * @author WONIU 
  * @date: 2017年6月22日 下午4:57:08 <br/>
  * @version  
  * @since JDK 1.6 
