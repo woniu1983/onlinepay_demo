@@ -8,7 +8,7 @@ package com.unionpay.acp.business;
  * @ClassName: UnipayTradeStatus <br/> 
  * @Description: TODO  <br/> 
  * 
- * @author maojianghui 
+ * @author woniu 
  * @date: 2017年6月23日 上午9:45:36 <br/>
  * @version  
  * @since JDK 1.6 
