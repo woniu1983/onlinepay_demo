@@ -18,13 +18,13 @@ public class WCPConstants {
 	public static final String KEY_CERT_PWD = "certPassword";
 	public static final String KEY_PAY_ENABLE = "wechatEnable";
 	
-	public static final String KEY = "vGrUtmAoXDrR1P2fuXRH2GfrwibXT6cjkyHwN4";
+	public static final String KEY = "vGr7777777777777777777777777777777777777777777777777777";
 
 	//微信分配的公众号ID（开通公众号之后可以获取到）
-	public static final String APPID = "wx43tgdgf534yhhsrth";
+	public static final String APPID = "wx777777777777777777777777777777777777777";
 
 	//微信支付分配的商户号ID（开通公众号的微信支付功能之后可以获取到）
-	public static final String MCHID = "1254885212";
+	public static final String MCHID = "7777777777";
 
 	//受理模式下给子商户分配的子商户号
 	public static final String SUBMCHID = "";
@@ -35,7 +35,7 @@ public class WCPConstants {
 	
 */
 	//HTTPS证书密码，默认密码等于商户号MCHID
-	public static final String CERTPASSWORD = "1254885212";
+	public static final String CERTPASSWORD = "7777777777";
 	//是否使用异步线程的方式来上报API测速，默认为异步模式
 	public static final boolean USETHREADTODOREPORT = true;
 
@@ -48,7 +48,7 @@ public class WCPConstants {
 	//机器IP
 	public static String IP = "";
 
-	// RITS账户， 调试可用，正式版必须以机器对应的运营商账户为准
+	// 调试可用，正式版必须以机器对应的运营商账户为准
 //	public static void initDefault(){
 //		Configure.setKey(KEY);
 //		Configure.setAppID(APPID);
