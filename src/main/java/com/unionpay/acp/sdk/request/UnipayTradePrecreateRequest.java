@@ -1,5 +1,5 @@
 /** 
- * Copyright (c) 2017, RITS All Rights Reserved. 
+ * Copyright (c) 2017, WONIU All Rights Reserved. 
  * 
  */ 
 package com.unionpay.acp.sdk.request;
@@ -17,7 +17,7 @@ import cn.woniu.onlinepay.model.UniPayOrder;
  * @ClassName: UnipayTradePrecreateRequest <br/> 
  * @Description: 银联支付： 下订单，返回二维码  <br/> 
  * 
- * @author maojianghui 
+ * @author WONIU 
  * @date: 2017年6月22日 下午4:06:33 <br/>
  * @version  
  * @since JDK 1.6 
