@@ -1,7 +1,3 @@
-/** 
- * Copyright (c) 2017, RITS All Rights Reserved. 
- * 
- */ 
 package com.alipay.fund.trans.business;
 
 import com.alipay.api.AlipayApiException;
@@ -17,8 +13,7 @@ import com.alipay.trade.config.Configs;
  * @ClassName: AlipayFundTransBusiness <br/> 
  * @Description: TODO  <br/> 
  * 
- * @author maojianghui 
- * @date: 2017年6月9日 下午2:17:58 <br/>
+ * @author woniu 
  * @version  
  * @since JDK 1.6 
  */

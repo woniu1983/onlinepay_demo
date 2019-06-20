@@ -1,11 +1,3 @@
-/**   
- * @Title: PayHelper.java 
- * @Package cn.com.rits.app.yunprint.communication 
- * @Description: TODO 
- * @author Woniu  
- * @date 2016年8月25日 下午1:35:07 
- * @version V1.0   
- */
 package cn.woniu.onlinepay;
 
 import com.alipay.trade.config.Configs;

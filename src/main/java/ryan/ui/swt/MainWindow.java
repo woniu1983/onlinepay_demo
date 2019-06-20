@@ -1,7 +1,3 @@
-/** 
- * Copyright (c) 2018, RITS All Rights Reserved. 
- * 
- */ 
 package ryan.ui.swt;
 
 import java.awt.Toolkit;

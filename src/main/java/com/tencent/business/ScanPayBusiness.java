@@ -2,7 +2,6 @@ package com.tencent.business;
 
 import static java.lang.Thread.sleep;
 
-//import com.rits.mypay_wechat.config.MyPayApplication;
 import com.tencent.common.Signature;
 import com.tencent.common.Util;
 import com.tencent.protocol.pay_protocol.ScanPayReqData;

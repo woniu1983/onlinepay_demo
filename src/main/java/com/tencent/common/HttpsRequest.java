@@ -17,7 +17,6 @@ import org.apache.commons.httpclient.params.HttpConnectionParams;
 import org.apache.commons.httpclient.params.HttpMethodParams;
 import org.apache.commons.httpclient.protocol.Protocol;
 
-//import com.rits.mypay_wechat.R;
 import com.tencent.service.IServiceRequest;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
@@ -70,13 +69,13 @@ public class HttpsRequest implements IServiceRequest{
 	private void init() throws IOException, KeyStoreException, UnrecoverableKeyException, NoSuchAlgorithmException, KeyManagementException {
 
 		Protocol myhttps = new Protocol("https", new NoCheckSSLSocketFactory(), 443);
-		Protocol.registerProtocol("https",  myhttps);//TODO Mao 2018-05-21
+		Protocol.registerProtocol("https",  myhttps);
 		Util.debug(">>>>>>>>>>>>>>init : https use NoCheckSSLSocketFactory ");
 		
 		httpClient = new HttpClient();
 
 		httpClient.getParams().setParameter(HttpMethodParams.HTTP_CONTENT_CHARSET,UTF8);
-		//        httpClient.getParams().setParameter(HTTP.CONTENT_ENCODING, UTF8);  //TODO  2016/11/23
+		//        httpClient.getParams().setParameter(HTTP.CONTENT_ENCODING, UTF8);  
 		//        httpClient.getParams().setParameter(HTTP.CHARSET_PARAM, UTF8);  
 		//        httpClient.getParams().setParameter(HTTP.DEFAULT_PROTOCOL_CHARSET,UTF8);
 
@@ -91,7 +90,7 @@ public class HttpsRequest implements IServiceRequest{
 				httpClient.getState().setProxyCredentials(
 						new AuthScope(CusProxy.getInstance().getHttpHost(), CusProxy.getInstance().getHttpPort(), null, null),
 						new UsernamePasswordCredentials(CusProxy.getInstance().getHttpUserName(), CusProxy.getInstance().getHttpPwd())
-						); //TODO  2016-08-11
+						); 
 			}
 		}
 
@@ -115,7 +114,7 @@ public class HttpsRequest implements IServiceRequest{
 				httpClient.getState().setProxyCredentials(
 						new AuthScope(CusProxy.getInstance().getHttpHost(), CusProxy.getInstance().getHttpPort(), null, null),
 						new UsernamePasswordCredentials(CusProxy.getInstance().getHttpUserName(), CusProxy.getInstance().getHttpPwd())
-						); //TODO  2016-08-11
+						); 
 			}
 		}
 
@@ -146,7 +145,7 @@ public class HttpsRequest implements IServiceRequest{
 		PostMethod httpPost = new PostMethod(url);
 
 		httpPost.getParams().setParameter(HttpMethodParams.HTTP_CONTENT_CHARSET,UTF8);
-		//        httpPost.getParams().setParameter(HTTP.CONTENT_ENCODING, UTF8);   //TODO  2016/11/23
+		//        httpPost.getParams().setParameter(HTTP.CONTENT_ENCODING, UTF8);   
 		//        httpPost.getParams().setParameter(HTTP.CHARSET_PARAM, UTF8);  
 		//        httpPost.getParams().setParameter(HTTP.DEFAULT_PROTOCOL_CHARSET, UTF8); 
 

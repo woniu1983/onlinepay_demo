@@ -1,15 +1,10 @@
-/** 
- * Copyright (c) 2017, RITS All Rights Reserved. 
- * 
- */ 
 package cn.woniu.onlinepay.model;
 
 /** 
  * @ClassName: UniPayOrder <br/> 
  * @Description: TODO  <br/> 
  * 
- * @author maojianghui 
- * @date: 2017年6月22日 下午8:47:00 <br/>
+ * @author Woniu 
  * @version  
  * @since JDK 1.6 
  */

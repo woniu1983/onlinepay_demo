@@ -122,7 +122,6 @@ public class AliPayBusiness {
 				//--------------------------------------------------------------------
 				if (doPayQueryLoop(payQueryLoopInvokedCount, request.getOutTradeNo())) {
 					Logger.Info("----------------AliPay Success");
-					//TODO
 					if (resultListener != null) {
 						resultListener.onPaySuccess(request.getOutTradeNo());
 					}

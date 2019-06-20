@@ -1,7 +1,3 @@
-/** 
- * Copyright (c) 2017, RITS All Rights Reserved. 
- * 
- */ 
 package com.alipay.fund.trans.service;
 
 import org.apache.commons.logging.Log;
@@ -17,8 +13,7 @@ import com.alipay.trade.model.builder.RequestBuilder;
  * @ClassName: AbsAlipayService <br/> 
  * @Description: TODO  <br/> 
  * 
- * @author maojianghui 
- * @date: 2017年6月9日 下午2:37:34 <br/>
+ * @author woniu 
  * @version  
  * @since JDK 1.6 
  */

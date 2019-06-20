@@ -1,7 +1,3 @@
-/** 
- * Copyright (c) 2016, RITS All Rights Reserved. 
- * 
- */ 
 package com.tencent.common;
 
 import java.io.File;
@@ -33,7 +29,8 @@ import org.apache.commons.httpclient.ConnectTimeoutException;
 import org.apache.commons.httpclient.params.HttpConnectionParams;
 import org.apache.commons.httpclient.protocol.SecureProtocolSocketFactory;
 
-import cn.com.rits.app.yunprint.util.Constant;
+import cn.woniu.onlinepay.WCPConstants;
+
 
 /** 
  * @ClassName: WCPSSLSocketFactory <br/> 
@@ -95,7 +92,7 @@ public class WCPSSLSocketFactory implements SecureProtocolSocketFactory {
 		try {
 			String certPath = Configure.getCertLocalPath();
 			if (certPath == null || certPath.trim().isEmpty()) {
-				instream = getClass().getResourceAsStream(Constant.CERT_FILE_NAME);
+				instream = getClass().getResourceAsStream(WCPConstants.CERT_FILE_NAME);
 			} else {
 				instream = new FileInputStream(new File(certPath));
 			}

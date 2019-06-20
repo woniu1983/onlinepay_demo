@@ -1,11 +1,3 @@
-/**   
- * @Title: PayOrder.java 
- * @Package cn.com.rits.app.yunprint.model 
- * @Description: TODO 
- * @author Woniu  
- * @date 2016年8月25日 下午2:44:34 
- * @version V1.0   
- */
 package cn.woniu.onlinepay.model;
 
 import cn.woniu.onlinepay.log.Logger;

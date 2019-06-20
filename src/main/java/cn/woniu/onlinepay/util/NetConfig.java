@@ -6,7 +6,7 @@ package cn.woniu.onlinepay.util;
 import java.io.File;
 
 /**
- * @author Ryan
+ * @author Woniu
  *
  */
 public class NetConfig {
